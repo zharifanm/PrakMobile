@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000080">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tampilan Display -->
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="#FFFFFF"
+        android:gravity="end"
+        android:hint="@string/display_hint"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textColorHint="#2196F3"
+        android:textSize="24sp"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Tombol ON -->
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_on"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Grid Tombol -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Baris 1 -->
+        <Button android:id="@+id/btn7" android:text="@string/btn_7" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn8" android:text="@string/btn_8" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn9" android:text="@string/btn_9" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnC" android:text="@string/btn_clear" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnSin" android:text="@string/btn_sin" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Baris 2 -->
+        <Button android:id="@+id/btn4" android:text="@string/btn_4" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn5" android:text="@string/btn_5" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn6" android:text="@string/btn_6" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnSqrt" android:text="@string/btn_sqrt" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnCos" android:text="@string/btn_cos" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Baris 3 -->
+        <Button android:id="@+id/btn1" android:text="@string/btn_1" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn2" android:text="@string/btn_2" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn3" android:text="@string/btn_3" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnMul" android:text="@string/btn_mul" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnTan" android:text="@string/btn_tan" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Baris 4 -->
+        <Button android:id="@+id/btnDot" android:text="@string/btn_dot" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn0" android:text="@string/btn_0" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btn00" android:text="@string/btn_00" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnAdd" android:text="@string/btn_add" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnDiv" android:text="@string/btn_div" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- Baris 5 -->
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"
+            tools:ignore="VisualLintBounds" />
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"
+            tools:ignore="VisualLintBounds" />
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"
+            tools:ignore="VisualLintBounds" />
+        <Button android:id="@+id/btnSub" android:text="@string/btn_sub" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+        <Button android:id="@+id/btnEq" android:text="@string/btn_eq" style="@style/CalcButton"
+            tools:ignore="VisualLintButtonSize" />
+    </GridLayout>
+
+    <!-- Tombol Exit -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_exit"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

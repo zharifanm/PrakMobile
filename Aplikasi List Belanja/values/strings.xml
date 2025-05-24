@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shopping list</string>
+    <string name="daftar_belanja">Daftar Belanja</string>
+    <string name="kelola_daftar_belanja_anda">Kelola daftar belanja Anda</string>
+    <string name="tambah_item_belanja">Tambah item belanja</string>
+    <string name="kategori">Kategori</string>
+    <string name="nama_item">Nama Item</string>
+</resources>
